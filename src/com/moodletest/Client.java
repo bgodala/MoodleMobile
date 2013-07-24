@@ -1,6 +1,8 @@
 package com.moodletest;
 
 import org.apache.http.HttpVersion;
+import org.apache.http.auth.AuthScope;
+import org.apache.http.auth.UsernamePasswordCredentials;
 import org.apache.http.client.HttpClient;
 import org.apache.http.conn.ClientConnectionManager;
 import org.apache.http.conn.params.ConnManagerParams;
@@ -14,7 +16,7 @@ import org.apache.http.params.HttpParams;
 import org.apache.http.params.HttpProtocolParams;
 
 public class Client {
-	public HttpClient httpClient;
+	public DefaultHttpClient httpClient;
 
 	public Client()
 	{
@@ -33,6 +35,8 @@ public class Client {
         // be using the HttpClient.
         ClientConnectionManager cm = new ThreadSafeClientConnManager(params, schemeRegistry);
         httpClient = new DefaultHttpClient(cm, params);
+        httpClient.getCredentialsProvider().setCredentials(new AuthScope(AuthScope.ANY_HOST, AuthScope.ANY_PORT, AuthScope.ANY_REALM, "basic"),
+        	    new UsernamePasswordCredentials("cs11b012", "xmEnEvolution"));
         //HttpClient httpClient = new DefaultHttpClient();
 	}
 }
