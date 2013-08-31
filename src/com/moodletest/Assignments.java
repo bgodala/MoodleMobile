@@ -119,7 +119,11 @@ public class Assignments extends ListActivity {
 								xpp.next();
 								xpp.next();
 								modname = xpp.getText();
-								if (xpp.getText().equals(type)) {
+								if(modname.equals("assignment"))
+									modname="assign";
+								//xpp.getText()
+								//if (xpp.getText().equals(type)) {
+								if (modname.equals(type)) {
 									// System.out.println(id + " " + name + " "
 									// + url);
 									namelist.add(name);
@@ -127,7 +131,7 @@ public class Assignments extends ListActivity {
 									if (!type.equals("url"))
 										urllist.add(url);
 
-									if (type.equals("assign")) {
+									if (type.equals("assign") ) {
 										database.open();
 										if (database.assignTableGetContent(id,
 												courseid, userid).getCount() == 0) {

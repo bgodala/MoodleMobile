@@ -14,59 +14,27 @@
             android:orientation="vertical" >
 
             <CheckBox
-<<<<<<< HEAD
                 android:id="@+id/proxy_check"
-=======
-                android:id="@+id/CheckBox01"
->>>>>>> 09a53d1c5c4b45f3c1c58b914ac88f78401a9248
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Use Proxy Settings" />
 
-<<<<<<< HEAD
             <EditText
                 android:id="@+id/proxy"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:hint="Proxy Host IP" >
-=======
-            <TextView
-                android:id="@+id/TextView02"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Proxy" />
-
-            <EditText
-                android:id="@+id/EditText02"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10" >
->>>>>>> 09a53d1c5c4b45f3c1c58b914ac88f78401a9248
 
                 <requestFocus />
             </EditText>
 
-<<<<<<< HEAD
             <EditText
                 android:id="@+id/port"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:hint="Proxy Port" >
-=======
-            <TextView
-                android:id="@+id/TextView01"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Port" />
-
-            <EditText
-                android:id="@+id/EditText01"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10" >
->>>>>>> 09a53d1c5c4b45f3c1c58b914ac88f78401a9248
                 <requestFocus />
             </EditText>
         </LinearLayout>
@@ -77,16 +45,11 @@
             android:orientation="vertical" >
 
             <CheckBox
-<<<<<<< HEAD
                 android:id="@+id/auth_check"
-=======
-                android:id="@+id/checkBox1"
->>>>>>> 09a53d1c5c4b45f3c1c58b914ac88f78401a9248
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Use Basic Authentication" />
 
-<<<<<<< HEAD
             <EditText
                 android:id="@+id/username"
                 android:layout_width="match_parent"
@@ -102,39 +65,10 @@
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:hint="Password" >
-=======
-            <TextView
-                android:id="@+id/textView1"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Username" />
-
-            <EditText
-                android:id="@+id/editText1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10" >
-                <requestFocus />
-            </EditText>
-                
-
-            <TextView
-                android:id="@+id/textView2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Password" />
-
-            <EditText
-                android:id="@+id/editText2"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:ems="10" >
->>>>>>> 09a53d1c5c4b45f3c1c58b914ac88f78401a9248
 
                 <requestFocus />
             </EditText>
 
-<<<<<<< HEAD
 
 
         </LinearLayout>
@@ -160,10 +94,6 @@
                             android:background="#DC143C" />
                     </LinearLayout>
 
-=======
-        </LinearLayout>
-
->>>>>>> 09a53d1c5c4b45f3c1c58b914ac88f78401a9248
     </LinearLayout>
     
 

@@ -132,7 +132,7 @@ public class AssignmentContent extends Activity {
 			// "utf-8")+"&password="+URLEncoder.encode(password.toString(),
 			// "utf-8"));
 			HttpEntity respentity = resp3.getEntity();
-			System.out.println(convertStreamToString(respentity.getContent()));
+			//System.out.println(convertStreamToString(respentity.getContent()));
 			Header header[] = resp3.getAllHeaders();
 			if (header != null) {
 				for (Header tempheader : header) {
@@ -167,6 +167,7 @@ public class AssignmentContent extends Activity {
 				InputStream instream = entity.getContent();
 
 				String result = convertStreamToString(instream);
+				System.out.println(result);
 				doc = Jsoup.parse(result);
 				// Elements content=doc.getElementsByClass("topics");
 
